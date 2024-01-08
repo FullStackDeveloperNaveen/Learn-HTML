@@ -1,60 +1,68 @@
-# HTML Introduction
+## HTML Introduction
 
-## HTML is the standard markup language for creating Web pages.
-
-* What is HTML?
-* HTML stands for Hyper Text Markup Language
+## What is HTML?
+* HTML stands for Hypertext Markup Language
+* Hypertext is Text which contain links to other texts
+* markup language it's a way to give instruction to the computer about how content should be organized and displayed.
+* Hypertext --> Hyperlink
 * HTML is the standard markup language for creating Web pages
 * HTML describes the structure of a Web page
-* HTML consists of a series of elements
-* HTML elements tell the browser how to display the content
-* HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
 
+## syntax
+```html
+<opening tag> content <closing tag>
+<h1>Content</h1>
 ```
-<!DOCTYPE html>
-<html>
-<head>
+* HTML file is saved in .html extension.
+* Default home page should be index.html
+
+## HTML Document/Structure
+
+```html
+<!DOCTYPE html> // let browser know it's an HTML5 Document.
+<html> // Root of an HTML Document
+<head> // contains the information of HTML Document.
 <title>Page Title</title>
 </head>
-<body>
+<body> // Contain everything you want to display on the web page.
 
 <h1>My First Heading</h1>
 <p>My first paragraph.</p>
 
 </body>
 </html>
-
 ```
 
-> Lets Understand above html code.
+## Lets Understand above html code
+```html
+* The **<!DOCTYPE html>** declaration defines that this document is an HTML5 document
+* The **<html>** element is the root element of an HTML page
+* The **<head>** element contains meta information about the HTML page
 
-* The ```<!DOCTYPE html> ``` declaration defines that this document is an HTML5 document
-* The ```<html>``` element is the root element of an HTML page
-* The ``` <head>``` element contains meta information about the HTML page
-* The ```<title>``` element specifies a title for the HTML page which is shown in the browser's title bar or in the page's tab
-* The ```<body>``` element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
-* The ```<h1>``` element defines a large heading
-* The ```<p>``` element defines a paragraph
-
-# What is an HTML Element?
-
-An HTML element is defined by a start tag, some content, and an end tag:
-
-Syntax:
-
-```<tagname> Content goes here... </tagname>```
-
-The HTML element is everything from the start tag to the end tag:
+* The <title> element specifies a title for the HTML page which is shown in the browser's title bar or in the page's tab
+* The **<body>** element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+* The **<h1>** element defines a large heading
+* The **<p>** element defines a paragraph
 ```
+
+## What is an HTML Element?
+
+* An HTML element is defined by a start tag, some content, and an end tag
+
+## Syntax:
+```html
+<tagname> Content goes here... </tagname>
+```
+* The HTML element is everything from the start tag to the end tag
+```html
 <h1>My First Heading</h1>
 <p>My first paragraph.</p>
 ```
+## Some HTML elements have no content (like the <br> element). These elements are called empty elements. Empty elements do not have an end tag!
 
->> Some HTML elements have no content (like the <br> element). These elements are called empty elements. Empty elements do not have an end tag!
+## HTML Page Structure
 
-# HTML Page Structure
-
-Below is a visualization of an HTML page structure:
+* Below is a visualization of an HTML page structure:
 ```
 <html>
     <head>
@@ -68,11 +76,11 @@ Below is a visualization of an HTML page structure:
 </html>
 
 ```
->> The content inside the ```<body> ```section will be displayed in a browser. The content inside the ```<title>``` element will be shown in the browser's title bar or in the page's tab.
+## The content inside the ```<body> ```section will be displayed in a browser. The content inside the ```<title>``` element will be shown in the browser's title bar or in the page's tab.
 
-# HTML BASIC:
+## HTML BASIC
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -87,7 +95,7 @@ Below is a visualization of an HTML page structure:
 * The HTML document itself begins with ```<html>``` and ends with ```</html>```.
 * The visible part of the HTML document is between ```<body>``` and ```</body>```.
 
-# The ```<!DOCTYPE>``` Declaration
+## The ```<!DOCTYPE>``` Declaration
 * The ```<!DOCTYPE>``` declaration represents the document type, and helps browsers to display web pages correctly.
 * It must only appear once, at the top of the page ```(before any HTML tags)```.
 
@@ -95,367 +103,342 @@ Below is a visualization of an HTML page structure:
 
 * The ```<!DOCTYPE>``` declaration for HTML5 is``` <!DOCTYPE html>``` .
 
-# HTML Headings
-
-* HTML headings are defined with the ```<h1> to <h6>``` tags.
-
-* ```<h1>``` defines the most important heading.``` <h6> ```defines the least important heading
-
-```
-Example:
-
-<h1>This is heading 1</h1>
-<h2>This is heading 2</h2>
-<h3>This is heading 3</h3>
-
-```
-
-# HTML Paragraphs
-
-* HTML paragraphs are defined with the ```<p>``` tag:
-
-```
-<p>This is a paragraph.</p>
-<p>This is another paragraph.</p>
-
-```
-
-# HTML Links
-
-* HTML links are defined with the ```<a>``` tag
-
-```
-Example:
-
-<a href="https://www.w3schools.com">This is a link</a>
-
-The link's destination is specified in the href attribute. 
-
-Attributes are used to provide additional information about HTML elements
-
-```
-# HTML Images
-
-* HTML images are defined with the ```<img>``` tag.
-* The source file (src), alternative text (alt), width, and height are provided as attributes.
-
-```
-Example:
-
-<img src="image.jpg" alt="image" width="104" height="142">
-```
-
-# HTML Elements
-
-* An HTML element is defined by a start tag, some content, and an end tag.
-
-``` <tagname>Content goes here...</tagname>```
-
-# Nested HTML Elements
-
-* HTML elements can be nested (this means that elements can contain other elements).
-
-* All HTML documents consist of nested HTML elements.
-
-``` 
-Example
-
-<!DOCTYPE html>
-<html>
-<body>
-
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-
-</body>
-</html>
-
-```
-* The ```<html> ``` element is the root element and it defines the whole HTML document
-* It has a start tag ```<html>``` and an end tag ```</html>```.
-* Then, inside the ```<html>``` element there is a``` <body>``` element.
-* The ```<body>``` element defines the document's body.
-* It has a start tag``` <body> ```and an end tag``` </body>```.
-* Then, inside the ```<body> ```element there are two other elements: ```<h1> and <p>```
-* The ```<h1>``` element defines a heading.
-* It has a start tag ```<h1> ```and an end tag ```</h1>```.
-* The ```<p>``` element defines a paragraph
-* It has a start tag ```<p> and an end tag </p>```.
-
-> Never Skip the End Tag
-> Unexpected results and errors may occur if you forget the end tag!
-
-# Empty HTML Elements.
-
-* HTML elements with no content are called empty elements.
-* The ```<br> ```tag defines a line break, and is an empty element without a closing tag
-```<p>This is a <br> paragraph with a line break.</p> ```.
-
-
-# HTML Attributes
+## HTML Attributes
 
 * HTML attributes provide additional information about HTML elements.
-
-* All HTML elements can have attributes.
-* Attributes provide additional information about elements
 * Attributes are always specified in the start tag
-* Attributes usually come in name/value pairs like: name="value".
+* Attributes usually come in name/value pairs like: name="value"
+* Name: Specifies the property for that element.
+* Value: Sets the value of that property for the element
 
-# The href Attribute.
 
-* The ```<a>``` tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to.
-
+```html
+<html lang="en">
 ```
-<a href="https://www.google.com">Visit Google</a>
-```
-
-# The src Attribute.
-
-* The ```<img>``` tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed.
-
-```
-<img src="imgage.jpg">
+## ID Attribute
+* The ID attribute is used to assign a unique identifier to an HTML element. Each element with an ID has its own unique identity
+```html
+  <p id="html">This is an HTML<p>
+  <p id="python">This is a Python</p>
 ```
 
-## There are two ways to specify the URL in the src attribute:
+## Class Attribute
+* The class attribute is used to associate an HTML element with a particular class, typically for styling or JavaScript manipulation. Unlike the ID attribute, the class attribute is not unique, and multiple elements can share the same class.
 
-1. Absolute URL - Links to an external image that is hosted on another website.
-
-Example: src="https://www.google.com/images/image.jpg".
-
-2. Relative URL - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page
-Example: src="image.jpg"
-
-* If the URL begins with a slash, it will be relative to the domain. Example: src="/images/image.jpg".
-
-> Tip: It is almost always best to use relative URLs. They will not break if you change domain.
-
-# The width and height Attributes:
-
-* The ```<img> ```tag should also contain the width and height attributes, which specify the width and height of the image (in pixels)
-
+```html
+<p class="html">This is an HTML</p>
+<p class="html ">This is a HTML</p>
 ```
-<img src="image.jpg" width="500" height="600">
+## Other useful HTML attributes
+## href Attribute
+* The href attribute is used to link to another page or another web address. It is used in  a tag
+```html
+<a href="https://devjunctionpoint.blogspot.com/"> Home </a>
 ```
-# The alt Attribute.
-* The required alt attribute for the <img> tag specifies an alternate text for an image,if the image for some reason cannot be displayed. This can be due to a slow connection, or an error in the src attribute, or if the user uses a screen reader.
+## src Attribute
+* src attribute is used to define file location. It accepts the URL of the resource.
 
-```
-<img src="image.jpg" alt="image with jacket">
+```html
+<img>,<iframe>,<audio>, <video>
+<img src="../images/E3CCA633-C689-4DD9-8B20-79E7C5A88487.jpg" 
+alt="Clickable World Map"/>
 ```
 
-# The style Attribute
+## alt Attribute
+* The alt attribute is added as an alternate text in a <img> tag. It holds a description of the image.
 
-* The style attribute is used to add styles to an element, such as color, font, size, and more.
-
+## HTML Attribute List
 ```
-<p style="color:red;">This is a red paragraph.</p>
+Attribute	Used in	Description
+alt	<img>	Description of the image
+src	<img>	URL of the image
+width	<img>	Width of the image
+height	<img>	Height of the image
+href	<a>	URL of the link
+target	<a>	Target of the link
+rel	<a>	Relation of the link
+lang	html	Language of the text
+style	Almost all elements	Style of the element
+class	Almost all elements	Class of the element
+id	Almost all elements	Id of the element
+title	Almost all elements	Title of the element
+dir	Almost all elements	Direction of the text
+colspan	<td>	Number of columns to span
+rowspan	<td>	Number of rows to span
+for	<label>	For which element the label is
+placeholder	<input>	Placeholder of the input
+autofocus	<input>	Focus the input
+required	<input>	Input is required
+checked	<input>	Input is checked
+disabled	<input>	Input is disabled
+readonly	<input>	Input is readonly
+max	<input>	Maximum value of the input
+min	<input>	Minimum value of the input
+action	<form>	Action of the form
+method	<form>	Method of the form
 ```
-# The lang Attribute
 
-* You should always include the lang attribute inside the <html> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.
-
+## HTML COMMENTS
+* It is used to understand the code written by someone.
+* Browser will ignore the comments.
+```html
+<!-- comment -->
+ ```
+## Types of Comments in HTML
+* HTML primarily supports two types of comments:
+Single-line Comments
+* Single-line comments are contained within one line. They are useful for short annotations.
+## Example:
+```html
+<!-- This is a single-line comment -->
 ```
+## Multi-line Comments
+* Multi-line comments span across multiple lines, making them ideal for detailed explanations or temporarily disabling blocks of code.
+Example:
+```html
+  <!-- 
+  This is a multi-line comment.
+  It spans multiple lines.
+  -->
+```
+
+
+## HTML Headings
+
+* The ```<h1>``` to ```<h6>``` tags create headings in HTML.
+
+* where ```<h1>``` is the biggest and most important, and ```<h6>``` is the smallest and least important
+
+```html
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headings and Paragraphs</title>
+</head>
+
 <body>
-...
+    <h1>Headingh1</h1>
+    <h2>Headingh2</h2>
+    <h3>Headingh3</h3>
+    <h4>Headingh3</h4>
+    <h5>Headingh3</h5>
+    <h6>Headingh3</h6>
 </body>
+
 </html>
 ```
-* Country codes can also be added to the language code in the lang attribute. So, the first two characters define the language of the HTML page, and the last two characters define the country.
+* The tag's element name is case-insensitive.
+* A single H1 is typically used per page
+* Follow the hierarchy from H1 to H6 consistently.
 
-```
-<!DOCTYPE html>
-<html lang="en-US">
-<body>
-...
-</body>
-</html>
-```
 
-# The title Attribute
+## HTML Paragraphs
 
-* The title attribute defines some extra information about an element.
-
-> The value of the title attribute will be displayed as a tooltip when you mouse over the element
-
-```
-<p title="I'm a tooltip">This is a paragraph.</p>
-```
-
-# HTML Headings
-
-* HTML headings are titles or subtitles that you want to display on a webpage.
-* HTML headings are defined with the ``` <h1> to <h6> tags```.
-* ```<h1>``` defines the most important heading. ```<h6>``` defines the least important heading.
-```
-<h1>Heading 1</h1>
-<h2>Heading 2</h2>
-<h3>Heading 3</h3>
-<h4>Heading 4</h4>
-<h5>Heading 5</h5>
-<h6>Heading 6</h6>
-```
-# HTML Paragraphs
-
-* The HTML ```<p> ```element defines a paragraph.
-* A paragraph always starts on a new line
-```
+* The ```<p>``` tag defines a paragraph.
+* Browsers automatically add a single blank line before and after each ```<p>``` element.
+```html
 <p>This is a paragraph.</p>
 <p>This is another paragraph.</p>
 ```
->> The browser will automatically remove any extra spaces and lines
+## br tag (line break)
 
-# HTML Horizontal Rules
-* The ```<hr>``` tag defines a thematic break in an HTML page
-* The ```<hr> ```tag is an empty tag, which means that it has no end tag.
+```html
+<p>
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+  <br> <!-- line break-->
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+</p>
 ```
-<h1>This is heading 1</h1>
-<p>This is some text.</p>
-<hr>
-<h2>This is heading 2</h2>
-<p>This is some other text.</p>
-<hr>
-```
-# HTML Line Breaks
-* The HTML ```<br>``` element defines a line break.
-* Use ```<br>``` if you want a line break (a new line) without starting a new paragraph
-* The ```<br>``` tag is an empty tag, which means that it has no end tag
-```
-<p>This is<br>a paragraph<br>with line breaks.</p>
-```
-# The HTML <pre> Element
-* The HTML ```<pre> ```element defines preformatted text
-* The text inside a ```<pre>``` element is displayed in a fixed-width font
+## hr Tag(Horizontal rule)
 
+```html
+<hr> <!-- Horizontal rule-->
 ```
-<pre>
-  My Bonnie lies over the ocean.
 
-  My Bonnie lies over the sea.
+## Anchor Link
 
-  My Bonnie lies over the ocean.
+* The ```<a>``` tag defines a hyperlink, which is used to link from one page to another.
 
-  Oh, bring back my Bonnie to me.
-</pre>
-```
-# HTML Style Attribute
-* Setting the style of an HTML element, can be done with the style attribute
-* HTML style attribute has the following syntax
-```
-<tagname style="property:value;">
-```
-* The property is a CSS property. The value is a CSS value.
+## Key Characteristics of HTML Anchor Links
 
-# Background Color
-```
-<body style="background-color:powderblue;">
+* Specified by the ```<a>``` tag.
+*	Also known as hyperlinks.
+*	Used to link one document to another.
+*	Includes a closing tag ```<a>```.
 
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
+```html
+<a href="https://www.instagram.com/junctioncodebase/" target="_blank"
 
-</body>
+title="Instagram id">Follow In Instagram</a>
 ```
-* Set background color for two different elements
-```
+
+## Essential Attributes of the Anchor Tag
+
+## HTML links primarily use two attributes:
+
+*	href attribute: Specifies the URL or destination the link points to.
+*	target attribute: Specifies where to open the linked document.
+
+## Target Attribute Values
+
+*	_blank: Opens the linked document in a new window or tab.
+*	_top: Opens document in the full body of the window.
+*	_self: Opens document in the same window or tab (default behavior).
+*	_parent: Opens the linked document in the parent frame.
+
+## Linking to Specific Page Sections
+* To link to a specific section of a webpage, you can:
+*	Use the name or id attribute of the target section.
+*	Use a hyperlink with a hash (##) followed by the target id or name.
+
+## Example
+*	Let's say you have a long webpage with multiple sections, and you want to create a link at the top that, when clicked, takes the user directly to a specific section further down the page. You can do this using HTML Anchor link that target specific sections.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Webpage</title>
+</head>
 <body>
 
-<h1 style="background-color:powderblue;">This is a heading</h1>
-<p style="background-color:tomato;">This is a paragraph.</p>
+  <!-- Link at the top -->
+  <a href="##gardening-tips">Go to Gardening Tips</a>
+
+  <!-- Some content -->
+  <p>Here is some other content...</p>
+
+  <!-- Gardening Tips Section -->
+  <h2 id="gardening-tips">Gardening Tips</h2>
+  <p>This section provides tips on how to garden...</p>
 
 </body>
-```
-# HTML Formatting Elements
- 
-1. ```<b> ```- Bold text - element defines bold text, without any extra importance
-2. ```<strong>``` - Important text - element defines text with strong importance
-3. ```<i> ```- Italic text 
-4. ```<em>``` - Emphasized text - element defines emphasized text, The content inside is typically displayed in italic
-5. ```<mark>``` - Marked text - element defines text that should be marked or highlighted
-6. ```<small>``` - Smaller text - element defines smaller text
-6. ```<del>``` - Deleted text - element defines text that has been deleted from a document. Browsers will usually strike a line through deleted text
-7. ```<ins>``` - Inserted text - element defines a text that has been inserted into a document. Browsers will usually underline inserted text
-8. ```<sub>``` - Subscript text - element defines subscript text. Subscript text appears half a character below the normal line like H2O
-```
-<p>This is <sub>subscripted</sub> text.</p>
-```
-9. ```<sup>``` - Superscript text - element defines superscript text. Superscript text appears half a character above the normal line  WWW[1]
-```
-<p>This is <sup>superscripted</sup> text.</p>
+</html>
+
+</body>
+
+</html>
 ```
 
-# HTML Quotation and Citation Elements
+## Link colors
+> Links typically appear in different colors based on their state:
+*	Active: Displayed in red and underlined like this sentence
+*	Visited: Appears purple and underlined like this sentence
+*	Unvisited: Shown as blue and underlined like this sentence
 
-# <blockquote> for Quotations
+## HTML Entities
 
-* HTML ```<blockquote>``` element defines a section that is quoted from another source
+* HTML entities are codes used to represent special characters and symbols that have reserved meanings in HTML.
+* These entities are especially important when you  want to display characters that might conflict with HTML syntax or when you want to display characters that aren't directly available on your keyboard.
+*HTML entities are represented using an ampersand (&) followed by a code and a semicolon (;).
 
-# <q> for Short Quotations
+
+&lt; 👉 Less than sign (<)
+&gt; 👉 Greater than sign (>)
+&amp; 👉 Ampersand (&)
+&quot; 👉 Double quotation mark (")
+&apos; 👉 Single quotation mark or apostrophe (')
+&nbsp; 👉 Non-breaking space ( )
+&copy; 👉 Copyright symbol (©)
+&reg; 👉 Registered trademark symbol (®)
+&trade; 👉 Trademark symbol (™)
+&hearts; 👉 Heart symbol (♥)
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Entities Example</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:
+wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+
+        html {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        &lt;: Less than sign (<br />
+        &gt;: Greater than sign (>)<br />
+        &amp;: Ampersand (&amp;)<br />
+        &quot;: Double quotation mark (")<br />
+        &apos;: Single quotation mark or apostrophe (')<br />
+        &nbsp;: Non-breaking &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp;space ( )<br />
+        &dollar;: Dollar Sign ($) <br />
+        &copy;: Copyright symbol (©)<br />
+        &reg;: Registered trademark symbol (®)<br />
+        &trade;: Trademark symbol (™)<br />
+        &hearts;: Heart symbol (♥, 💖)
+    </p>
+</body>
+
+</html>
+
 ```
-<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+## INTERVIEW QUESTIONS: HTML ENTITIES
+
+* 1: When might you use the &nbsp; entity?
+* The &nbsp; entity is used to insert a non-breaking space, which prevents the browser from collapsing consecutive spaces into one
+
+* 2: How would you display a trademark symbol using an HTML entity?
+* ou can display a trademark symbol using the &trade; entity: &trade;.
+
+* 3: Why is it important to use HTML entities for special characters?
+* Using HTML entities ensures proper rendering of characters and symbols and helps avoid conflicts with HTML syntax.
+
+* 4: Represent the dollar sign symbol using different HTML entity methods
+* Using Named Entity: &dollar; 
+
+## HTML Image Tag
+
+* ```<img>``` tag is used to embed(ADD) an image in an HTML page.
+
+```html
+ <img src="/image.png" alt="altext"/>
 ```
-# <abbr> for Abbreviations
+## Key Features of the <img> Tag
+* It's a self-closing tag, meaning it doesn't require a corresponding closing tag
+* Commonly used attributes include the "alt" attribute for image descriptions and the "src" attribute for specifying the image location.
+* Supports various image formats including PNG, JPEG, JPG, GIF, etc.
 
-* The HTML ```<abbr>``` tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr."
-```
-<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
-```
-# HTML <address> for Contact Information
-* The HTML``` <address>``` tag defines the contact information for the author/owner of a document or an article
-```
-<address>
-Written by John Doe.<br>
-Visit us at:<br>
-Example.com<br>
-Box 564, Disneyland<br>
-USA
-</address>
-```
-# HTML Comment Tag
+## Setting Mandatory Attributes
 
+* src attribute: Specifies the path to the image file.
+* alt attribute: Provides a text description for the image.
+```html
+ <img src="images/profile_picture.jpg" alt="Profile Picture" />
 ```
-<!-- Write your comments here -->
+## Setting Image Dimensions
+
+```html
+<img src="image.png" alt="Description" 
+width="300" height="100" />
 ```
 
-# HTML Links
+## Lazy Loading Attribute
+* You can use the loading attribute to completely defer the loading of offscreen images that are reached by scrolling:
 
-* HTML links are hyperlinks.
-
-* You can click on a link and jump to another document.
-
-* When you move the mouse over a link, the mouse arrow will turn into a little hand.
-
-> Note: A link does not have to be text. A link can be an image or any other HTML element!
-
-## HTML Links - Syntax
+```html
+<a href="https://devjunctionpoint.blogspot.com/" target="_blank">
+  <img src="../images/E3CCA633-C689-4DD9-8B20-79E7C5A88487.jpg" 
+  alt="my Image" width="250" height="150"
+  title="My Image" loading="lazy" />
+</a>
 
 ```
-<a href="url">link text</a>
-```
-* a is an element and href is an attribute which indicate the link destination.
-
-```
-<a href="https://www.google.com/">Visit Google.com!</a>
-
-```
-* By default, links will appear as follows in all browsers:
-
-1. An unvisited link is underlined and blue
-2. A visited link is underlined and purple
-3. An active link is underlined and red
-
-# HTML Links - The target Attribute
-
-* The target attribute specifies where to open the linked document
-> The target attribute can have one of the following values:
-
-1.  _self - Default. Opens the document in the same window/tab as it was clicked
-2.  _blank - Opens the document in a new window or tab
-3.  _parent - Opens the document in the parent frame
-4.  _top - Opens the document in the full body of the window
-
-# Use an Image as a Link
+## Use an Image as a Link
 * To use an image as a link,put the ```<img>``` tag inside the ```<a>``` tag.
 ```
 <a href="default.asp">
@@ -463,35 +446,189 @@ USA
 </a>
 ```
 
-# Link to an Email Address
-* Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email).
+## INTERVIEW QUESTIONS: HTML IMAGE TAG 
+
+
+* 1: How would you make an image responsive using the width attribute?
+
+* You can set the width attribute to a percentage value (e.g., width="100%") to make the image adjust its width based on the available space.
+
+* 2: How do you create an image link using the ```<img>``` tag?
+
+* You wrap the ```<img>``` tag with an anchor ```<a>``` tag and provide the href attribute in the ```<a>```tag.
+
+* 3: What's the difference between relative and absolute URLs in the href attribute?
+
+* Relative URLs are URLs that are relative to the current page's URL. Absolute
+
+* URLs are complete URLs, including the protocol (http/https) and domain.
+
+* 4: Why is providing descriptive alt text for images important? 
+
+* It improves accessibility for users with visual impairments and helps search engines understand image content.
+
+## picture tag
+
+* The ```<picture>``` element in HTML is used to provide multiple sources of an image, allowing the   browser to choose the most appropriate source based on the user's device,   screen size, and other factors. This is particularly useful for responsive  design and ensuring the best quality images are displayed. ```</picture>```
+
+## SHARING IS CARING 💖  https://pixelied.com/, https://squoosh.app/
+
+```html
+<picture>
+        <source srcset="./images/html.webp" type="image/webp" />
+        <source srcset="./images/html.jpg" type="image/jpg" />
+        <source srcset="./images/html.jpeg" type="image/jpeg" />
+        <source srcset="./images/html.svg" type="image/svg" />
+        <img src="./images/html.png" alt="Images" width="500" />
+</picture>
 ```
-<a href="mailto:someone@example.com">Send email</a>
+## figure tag
+
+* The figure element is particularly useful for images, illustrations, diagrams, videos, audio clips, and other types of media.
+* Use the alt attribute for images within the figure element to provide alternative text for accessibility.
+* The figure element helps improve accessibility and search engine optimization by indicating the content and its context.
+
+```html
+ <!-- add figure tag here  -->
+    <figure>
+        <img src="../images/E3CCA633-C689-4DD9-8B20-79E7C5A88487.jpg" 
+        
+        alt="my image" width="500" height="auto" />
+        <figcaption>This is my image</figcaption>
+    </figure>
 ```
 
-# HTML Image 
+## INLINE & BLOCK ELEMENTS
+* HTML elements are generally divided into two categories: Block-level and Inline elements
+* Inline Elements don't start on a new line. It only takes the width required to cover the content
+* Block-level elements take complete width and start on a new line and take up the entire width of their container by default.
 
-```
-<img src="url" alt="alternatetext">
-```
-# Background Images
-* Background Image on a HTML element
-* To add a background image on an HTML element, use the HTML style attribute and the CSS background-image property:
-```
-<p style="background-image: url('img_girl.jpg');">
-```
-```
-<style>
-p {
-  background-image: url('img_girl.jpg');
-}
-</style>
+## Common Inline Elements
+```html
+<span>: A generic inline container for text
+<a>: Defines a hyperlink
+<strong>: Defines important text
+<em>: Defines emphasized text
+<img>: Embeds an image
+<input>: Defines an input control
 ```
 
-# HTML Tables:
-HTML tables allow web developers to arrange data into rows and columns.
+## Characteristics of Block-level Elements:
+*	Always start on a new line.
+*	Take up the full width available.
+*	Width and height can be controlled via CSS.
+*	Can contain other block-level as well as inline elements.
 
-A table in HTML consists of table cells inside rows and columns.
+## Common Block-level Elements:
+```html
+•	<h1>,<h2>,<h3>,<h4>,<h5>,<h6> - Headings
+•	<p> - Paragraphs
+•	<hr> - Horizontal rule
+•	<address> - Address information
+```
+
+## HTML LIST:
+
+HTML lists allow web developers to group a set of related items in lists
+
+
+## Types of HTML Lists
+* **Unordered List**: Displays items using bullets.
+* **Ordered List**: Displays items in a numerical sequence, and supports various numbering styles like Arabic numerals, Roman numerals, and so on.
+* **Definition List**: Organizes items in a format similar to a dictionary, with terms and their corresponding definitions.
+
+
+## Unordered HTML List
+* An unordered list starts with the ```<ul> ```tag. Each list item starts with the ```<li> ```tag.
+
+## Key Characteristics of Unordered Lists
+*	No specific sequence is required.
+*	Typically displayed as bullet points.
+*	Defined using the ```<ul>``` tag.
+*	Individual items use the ```<li>``` tag.
+
+```html
+<ul>
+  <li>Pen</li>
+  <li>Pencil</li>
+  <li>Eraser</li>
+</ul>
+```
+## Customizing Bullet Points with 'type' Attribute
+
+* You can specify the style of bullet points using the type attribute. It supports three values:
+* disc - default bullet style
+* square
+* circle
+
+## Ordered HTML List
+
+* An ordered list starts with the ```<ol>``` tag. Each list item starts with the``` <li>``` tag.
+
+* An Ordered list is used to create a list of item in a specific order typically indicated by numbers
+
+## Key Points
+*	Ordered lists are used for items that follow a sequence.
+*	They are created using the ```<ol>``` (Ordered List) tag.
+*	List items are enclosed within ```<li>``` (List Item) tags.
+
+
+* The list items will be marked with numbers by default:
+```html
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+```
+## Setting the 'type' Attribute
+* The type attribute specifies the style of numbering. You have several options:
+*	Uppercase Roman Numerals: Use type="I"
+*	Lowercase Roman Numerals: Use type="i"
+*	Arabic Numerals: Use type="1" (This is the default if the type attribute is not specified)
+*	Lowercase Alphabetical Letters: Use type="a"
+*	Uppercase Alphabetical Letters: Use type="A"
+
+
+## HTML Description Lists
+
+* It is used to represent elements in definition form like a dictionary.
+```<dl>``` tag defines the description list, ```<dt>``` tag defines the term, and the ```<dd>``` tag describes each term in
+```html
+<dl>
+    <dt> HTML Simplified </dt>
+        <dd> This is complete series of HTML </dd>
+    <dt> CSS Master </dt>
+        <dd> This will help you to master CSS </dd>
+</dl>
+```
+## INTERVIEW QUESTIONS: HTML List 
+* 1: What is the significance of the type attribute in ordered lists?
+* Decimal Numbers (type="1"): This is the default style. It uses regular decimal numbers. 
+* Uppercase Letters (type="A"): It uses uppercase letters (A, B, C) as list item numbers.
+* Lowercase Letters (type="a"): It uses lowercase letters (a, b, c) as list item numbers.
+* Uppercase Roman Numerals (type="I"): It uses uppercase Roman numerals (I, II, III) as list item numbers.
+* Lowercase Roman Numerals (type="i"): It uses lowercase Roman numerals (i, ii, iii) as list item numbers. 
+
+* 2: What is the use of the start attribute in ordered lists? 
+
+* 3: Explain the concept of nested lists 
+
+* 4: How do you create a horizontal navigation menu using an unordered list? 
+
+
+## HTML Tables:
+* HTML tables allow web developers to arrange data into rows and columns.
+* we must write everything inside the table tag.
+
+* ```<table></table>``` This element defines an HTML table which is used to organize data into row and column, -->
+* ```<tbody>``` element Groups the main content(data rows).
+* ```<thead>``` element Groups the header content (table heading).
+* ```<th>``` Defines a header cell (table heading) with in a table.
+* ```<td>``` Represent a data cell within an HTML table.
+* ```<tr>``` Defines a row within an html table
+
+* A table in HTML consists of table cells inside rows and columns.
 
 ```
 <table>
@@ -514,182 +651,132 @@ A table in HTML consists of table cells inside rows and columns.
 ```
 ##  Table Cells
 
-Each table cell is defined by a ``` <td>``` and a ```</td>``` tag.
+* Each table cell is defined by a ``` <td>``` and a ```</td>``` tag.
 
-td stands for table data.
+* td stands for table data.
 
 ## Table Rows
-Each table row starts with a ``` <tr> and ends with a </tr>``` tag
+* Each table row starts with a ``` <tr> and ends with a </tr>``` tag
 
 tr stands for table row.
 
 ## Table Headers
-Sometimes you want your cells to be table header cells, In those cases use the ```<th> tag instead of the <td>```
+*Sometimes you want your cells to be table header cells, In those cases use the ```<th> tag instead of the <td>```
 
-th stands for table header.
+## th stands for table header.
 
-# HTML LIST:
+## INTERVIEW Q: HTML TABLES
 
-HTML lists allow web developers to group a set of related items in lists
+*  1: What is the purpose of the ```<thead>```, ```<tbody>```, and ```<tfoot>``` elements within a table? -->
+* 2: How can you create table headers using the ```<th>``` element? How is it different from using ```<td>``` for data cells? -->
+* 3: What is the significance of the colspan and rowspan attributes in table cells? Provide an example. -->
 
-## Unordered HTML List
-
-An unordered list starts with the ```<ul> ```tag. Each list item starts with the ```<li> ```tag.
-
-The list items will be marked with bullets (small black circles) by default:
-
-```
-<ul>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ul>
-```
-## Ordered HTML List
-
-An ordered list starts with the ```<ol>``` tag. Each list item starts with the``` <li>``` tag.
-
-The list items will be marked with numbers by default:
-```
-<ol>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ol>
-```
-## HTML Description Lists
-
-It is used to represent elements in definition form like a dictionary.
-```<dl>``` tag defines the description list, ```<dt>``` tag defines the term, and the ```<dd>``` tag describes each term in
-```
-<dl>
-    <dt> HTML Simplified </dt>
-        <dd> This is complete series of HTML </dd>
-    <dt> CSS Master </dt>
-        <dd> This will help you to master CSS </dd>
-</dl>
-```
-
-## HTML Unordered Lists
-
-Unordered HTML List - Choose List Item Marker
-
-The CSS list-style-type property is used to define the style of the list item marker. It can have one of the following values:
-
-1. disc -	Sets the list item marker to a bullet (default)
-2. circle - Sets the list item marker to a circle
-3. square - 	Sets the list item marker to a square
-4. none	- The list items will not be marked
-
-# HTML Block and Inline Elements
-## Block-level Elements
-A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.
-
-A block-level element always takes up the full width available (stretches out to the left and right as far as it can).
-
-Two commonly used block elements are: ```<p> and <div>```.
-
-The ```<p>``` element defines a paragraph in an HTML document.
-
-The ```<div>``` element defines a division or a section in an HTML document.
-
-## Inline Elements
-
-An inline element does not start on a new line.
-
-An inline element only takes up as much width as necessary.
-
-This is a ```<span>``` element inside a paragraph.
-
-# HTML class Attribute
-
-The class attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name.
+## The HTML <pre> Element
+* The HTML ```<pre> ```element defines preformatted text
+* The text inside a ```<pre>``` element is displayed in a fixed-width font
 
 ```
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-.city {
-  background-color: tomato;
-  color: white;
-  border: 2px solid black;
-  margin: 20px;
-  padding: 20px;
-}
-</style>
-</head>
-<body>
+<pre>
+  My Bonnie lies over the ocean.
 
-<div class="city">
-  <h2>London</h2>
-  <p>London is the capital of England.</p>
-</div>
+  My Bonnie lies over the sea.
 
-<div class="city">
-  <h2>Paris</h2>
-  <p>Paris is the capital of France.</p>
-</div>
+  My Bonnie lies over the ocean.
 
-<div class="city">
-  <h2>Tokyo</h2>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
+  Oh, bring back my Bonnie to me.
+</pre>
+```
+## HTML Style Attribute
+* Setting the style of an HTML element, can be done with the style attribute
+* HTML style attribute has the following syntax
+```
+<tagname style="property:value;">
+```
+* The property is a CSS property. The value is a CSS value.
+
+## Background Color
+```
+<body style="background-color:powderblue;">
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
 
 </body>
-</html>
 ```
-
-> Note: To Access the class name in style we use . symbol.
-
-# HTML id Attribute
-
-id attribute is used to specify a unique id for an HTML element.
-
-You cannot have more than one element with the same id in an HTML document
-
-> Note: To Access id we use # symbol.
+* Set background color for two different elements
 ```
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-#myHeader {
-  background-color: lightblue;
-  color: black;
-  padding: 40px;
-  text-align: center;
-}
-</style>
-</head>
 <body>
 
-<h1 id="myHeader">My Header</h1>
+<h1 style="background-color:powderblue;">This is a heading</h1>
+<p style="background-color:tomato;">This is a paragraph.</p>
 
 </body>
-</html>
 ```
-> Note: The id name is case sensitive!
+## HTML Formatting Elements
+ 
+1. ```<b> ```- Bold text - element defines bold text, without any extra importance
+2. ```<strong>``` - Important text - element defines text with strong importance
+3. ```<i> ```- Italic text 
+4. ```<em>``` - Emphasized text - element defines emphasized text, The content inside is typically displayed in italic
+5. ```<mark>``` - Marked text - element defines text that should be marked or highlighted
+6. ```<small>``` - Smaller text - element defines smaller text
+6. ```<del>``` - Deleted text - element defines text that has been deleted from a document. Browsers will usually strike a line through deleted text
+7. ```<ins>``` - Inserted text - element defines a text that has been inserted into a document. Browsers will usually underline inserted text
+8. ```<sub>``` - Subscript text - element defines subscript text. Subscript text appears half a character below the normal line like H2O
+```
+<p>This is <sub>subscripted</sub> text.</p>
+```
+9. ```<sup>``` - Superscript text - element defines superscript text. Superscript text appears half a character above the normal line  WWW[1]
+```
+<p>This is <sup>superscripted</sup> text.</p>
+```
 
-> Note: The id name must contain at least one character, cannot start with a number, and must not contain whitespaces (spaces, tabs, etc.).
+## HTML Quotation and Citation Elements
 
-## Difference Between Class and ID
+## <blockquote> for Quotations
 
-A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page
+* HTML ```<blockquote>``` element defines a section that is quoted from another source
 
-# HTML Form
+## <q> for Short Quotations
+```
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+```
+## <abbr> for Abbreviations
+
+* The HTML ```<abbr>``` tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr."
+```
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+```
+## HTML <address> for Contact Information
+* The HTML``` <address>``` tag defines the contact information for the author/owner of a document or an article
+```
+<address>
+Written by John Doe.<br>
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+```
+
+## Link to an Email Address
+* Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email).
+```
+<a href="mailto:someone@example.com">Send email</a>
+```
+## HTML Form
 
 * The form is a collection of input tags in an HTML document.
 * Forms are mainly used to take the data from the user to serve on the server.
 * Forms are created using ```<form>``` tag.
 
-# Form Tag Attributes
+## Form Tag Attributes
 
 * action: This attribute specifies what action will be taken after submitting the form.
 * target: This specifies on which browser tab the response will be displayed after form submission.
 * method: This attribute is used to define the HTTP method used to submit the form.
 
-## What a normal HTML Form Contains?
+#### What a normal HTML Form Contains?
 ```
 <input>
 <label>
@@ -708,13 +795,13 @@ Example:
 </form>
 ```
 
-# Input Tag in HTML 
+## Input Tag in HTML 
 
 * The input tag specifies an input field where the user can enter data.
 * Input filed is created using ```<input> ```tag.
 * Input tags don't need any closing tags.
 
-## Types of Input Tag
+#### Types of Input Tag
 
 1. Text: It is used to create a text input field.
 
@@ -790,7 +877,7 @@ Example:
 <input type="button" value="Button">
 ```
 
-# Input Tag Attributes
+## Input Tag Attributes
 
 Attribute Provide the additional information.
 
@@ -823,12 +910,12 @@ Attribute Provide the additional information.
 <input type="range" name="" id="" min="0" max="100">
 ```
 
-# Semantic HTML5 Elements
+## Semantic HTML5 Elements
 
 * The elements in HTML which define their meaning are semantic elements.
 And also these elements describe their content.
 
-## Semantic Elements:
+#### Semantic Elements:
 
 1.  form: Used to take the data from the user to process on the server.
 
@@ -926,7 +1013,7 @@ And also these elements describe their content.
 </aside>
 ```
 
-# Non-Semantic HTML5 Elements
+## Non-Semantic HTML5 Elements
 
 * The elements in HTML which don't represent any meaning.
 And these elements don't describe anything about their content
@@ -948,4 +1035,79 @@ And these elements don't describe anything about their content
 2.  span: It is used to mark up a part of the text.
 ```
 <span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam commodi a sapiente vel adipisci id odit nam eveniet ea necessitatibus. </span>
+```
+
+## HTML Styles - CSS
+* CSS stands for Cascading Style Sheets.
+* CSS saves a lot of work. It can control the layout of multiple web pages all at once.
+
+## CSS can be added to HTML documents in 3 ways:
+
+* Inline - by using the style attribute inside HTML elements
+* Internal - by using a ```<style> element in the <head>``` section
+* External - by using a ```<link>``` element to link to an external CSS file
+
+## Inline CSS
+* An inline CSS is used to apply a unique style to a single HTML element.
+* An inline CSS uses the style attribute of an HTML element.
+
+```html
+<h1 style="color:blue;">A Blue Heading</h1>
+
+<p style="color:red;">A red paragraph.</p>
+```
+
+## Internal CSS
+
+* An internal CSS is used to define a style for a single HTML page.
+* An internal CSS is defined in the ```<head>``` section of an HTML page, within a ```<style>``` element.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+```
+
+## External CSS
+* An external style sheet is used to define the style for many HTML pages.
+* To use an external style sheet, add a link to it in the ```<head>``` section of each HTML page
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+```
+styles.css
+```
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+}
 ```
